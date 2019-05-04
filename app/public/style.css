@@ -16,9 +16,21 @@
 .mgt08 {
     margin-top: 0.8em;
 }
+.mg0{
+    margin: 0
+}
 .bk {
     display: block;
 }
+.text-center {
+    text-align: center;
+}
 .center {
-    margin:  0 auto;
+    margin: auto;
+}
+.wid100 {
+    width: 100%
+}
+.brdrSld{
+    border: solid .2em;
 }

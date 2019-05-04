@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,30 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div id="friendName" class="modal-title"></div>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="photoDisplay" class="row"></div>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger center" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     <div class="container pd0">
         <h2 class="mgtb08">
             Survey Questions
@@ -22,15 +46,15 @@
         </h3>
         <form autocomplete="on">
             <label for="name" ><strong>Name (Required)</strong></label>
-            <input id="name" name="name" type="text" class="form-control" >
+            <input id="name" name="name" type="text" class="form-control" required="required">
             <label for="photo"><strong>Link to Photo Image (Required)</strong></label>
-            <input id="photo" name="photo" type="text" class="form-control" >
+            <input id="photo" name="photo" type="text" class="form-control" required="required">
             <hr>
             <h3>
                 <strong>Question 1</strong>
             </h3>
             <label for="outdoors"><strong>You love to explore the outdoors.</strong></label>
-            <select id="outdoors" name="outdoors" class="question bk">
+            <select id="outdoors" name="outdoors" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -42,7 +66,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -54,7 +78,7 @@
                 <strong>Question 3</strong>
             </h3>
             <label for="pointOfView"><strong></strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -66,7 +90,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -78,7 +102,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -90,7 +114,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk"required>
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -102,7 +126,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -114,7 +138,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -126,7 +150,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -138,7 +162,7 @@
                 <strong>Question 2</strong>
             </h3>
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk">
+            <select id="pointOfView" name="pointOfView"  class="question bk" required="required">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -147,7 +171,7 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
         </form>
-        <button id="submit" type="submit" class="btn btn-primary form-control mgt08" data-target="#friendModal">
+        <button id="submit"  type="submit" class="btn btn-primary form-control mgt08" data-toggle="modal" data-target="#myModal">
             <i class="fa fa-check-circle"></i> Submit
         </button>
         <hr>
@@ -155,33 +179,10 @@
         |
         <a href="https://github.com/dscarlin/friend_finder">GitHub Repo</a>
     </div>
-    <!-- The Modal -->
-    <div class="modal" id="friendModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 id="friendName" class="modal-title"></h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <div id="photoDisplay" class="row"></div>
-                   
-                </div>
-                
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script src="../logic/logic.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
 </body>
+  
 </html>

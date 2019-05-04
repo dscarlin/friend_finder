@@ -1,16 +1,12 @@
-
-
     $('#submit').click((e) => {
         e.preventDefault();
 
-        console.log("form input object: " + JSON.stringify(nameObj(), null, 2));
         $.post('/api/friends', nameObj()).done((response) => {
             displayModalWith(response);
-            console.log("friends object array: " + JSON.stringify(response, null, 2));
         });
     });
 
-let nameObj = () => {
+function nameObj() {
     let name = $('#name').val();
     let photo = $('#photo').val();
     let ansArray = []
@@ -25,10 +21,10 @@ let nameObj = () => {
     };
 }
 
-let displayModalWith = (info) => {
-    let photoElement = $('<img>').attr({src: info.photo, alt: 'Profile Picture N/A'});
-    $('#friendName').text(info.name);
-    $('#photoDisplay').append(photoElement);
-    
+function displayModalWith(info) {
+    let photoElement = $('<img>').attr({src: info.photo, alt: 'Profile Picture N/A', class: 'wid100 mgtb08 brdrSld'})
+        .attr({});
+    $('#friendName').append($('<h2>').text('Best Friend Match:').addClass('text-center'),$('<h3>').addClass('text-center').append($('<strong>').text(info.name)));
+    $('#photoDisplay').empty().attr('class','mg0').append(photoElement); 
 }
 

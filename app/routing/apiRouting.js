@@ -7,10 +7,9 @@ module.exports = (app) => {
     })
 
     app.post('/api/friends', (req, res) => {
-        console.log(req.body);
-        let bestFriendMatchInfoObj = require('../logic/calculateBestMatch.js')(req, friendsObjArray)
+        let bestFriendMatchInfoObj = require('../logic/calculateBestMatch.js')(req, friendsObjArray);
         res.json(bestFriendMatchInfoObj);
         friendsObjArray.push(req.body);
-    })
+    });
     
 }
