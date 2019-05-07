@@ -1,4 +1,4 @@
-const friendsObjArray = require('../data/friends')
+const friendsObjArray = require('../data/friends');
 
 module.exports = (app) => {
 
@@ -9,7 +9,8 @@ module.exports = (app) => {
     app.post('/api/friends', (req, res) => {
         let bestFriendMatchInfoObj = require('../logic/calculateBestMatch.js')(req, friendsObjArray);
         res.json(bestFriendMatchInfoObj);
-        friendsObjArray.push(req.body);
+        if(bestFriendMatchInfoObj)
+            friendsObjArray.push(req.body);
     });
     
-}
+};

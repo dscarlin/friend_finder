@@ -34,3 +34,7 @@
 .brdrSld{
     border: solid .2em;
 }
+.error {
+    color: red;
+    margin-bottom:0;
+}

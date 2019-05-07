@@ -45,28 +45,36 @@
             <strong>About You</strong>
         </h3>
         <form autocomplete="on">
-            <label for="name" ><strong>Name (Required)</strong></label>
-            <input id="name" name="name" type="text" class="form-control" required="required">
-            <label for="photo"><strong>Link to Photo Image (Required)</strong></label>
-            <input id="photo" name="photo" type="text" class="form-control" required="required">
+            <label for="name" ><strong>Name </strong>(Required)</label>
+            <div id="nameError"></div>
+            <input id="name" name="name" type="text" class="form-control">
+
+            <label for="photo"><strong>Link to Photo Image </strong>(Required)</label>
+            <div id="photoError"></div>
+            <input id="photo" name="photo" type="text" class="form-control">
+
             <hr>
+
             <h3>
                 <strong>Question 1</strong>
             </h3>
-            <label for="outdoors"><strong>You love to explore the outdoors.</strong></label>
-            <select id="outdoors" name="outdoors" class="question bk" required="required">
-                <option value="" disabled selected>Select An Option</option>
+            <div id="questionError1"></div>            
+            <label for="outdoors"><strong>Your mind is always buzzing with unexplored ideas and plans.</strong></label>
+            <select id="question1" name="outdoors" class="question bk">
+                <option value=""  disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
                 <option value="3">(Agree)</option>
                 <option value="4">(Moderately Disagree)</option>
                 <option value="5">(Strongly Disagree)</option>
             </select>
+
             <h3 class="mgt08">
                 <strong>Question 2</strong>
             </h3>
+            <div id="questionError2"></div>            
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
+            <select id="question2" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -74,11 +82,27 @@
                 <option value="4">(Moderately Disagree)</option>
                 <option value="5">(Strongly Disagree)</option>
             </select>
+
             <h3 class="mgt08">
                 <strong>Question 3</strong>
             </h3>
+            <div id="questionError3"></div>            
             <label for="pointOfView"><strong></strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
+            <select id="question3" name="pointOfView" class="question bk">
+                <option value="" disabled selected>Select An Option</option>
+                <option value="1">(Strongly Agree)</option>
+                <option value="2">(Moderately Agree)</option>
+                <option value="3">(Agree)</option>
+                <option value="4">(Moderately Disagree)</option>
+                <option value="5">(Strongly Disagree)</option>
+            </select>
+
+            <h3 class="mgt08">
+                <strong>Question 4</strong>
+            </h3>
+            <div id="questionError4"></div>            
+            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
+            <select id="question4" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -87,10 +111,11 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
             <h3 class="mgt08">
-                <strong>Question 2</strong>
+                <strong>Question 5</strong>
             </h3>
+            <div id="questionError5"></div>            
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
+            <select id="question5" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -99,10 +124,11 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
             <h3 class="mgt08">
-                <strong>Question 2</strong>
+                <strong>Question 6</strong>
             </h3>
+            <div id="questionError6"></div>            
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
+            <select id="question6" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -111,10 +137,11 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
             <h3 class="mgt08">
-                <strong>Question 2</strong>
+                <strong>Question 7</strong>
             </h3>
+            <div id="questionError7"></div>            
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
+            <select id="question7" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -123,10 +150,11 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
             <h3 class="mgt08">
-                <strong>Question 2</strong>
+                <strong>Question 8</strong>
             </h3>
+            <div id="questionError8"></div>            
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
+            <select id="question8" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -135,10 +163,11 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
             <h3 class="mgt08">
-                <strong>Question 2</strong>
+                <strong>Question 9</strong>
             </h3>
+            <div id="questionError9"></div>            
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
+            <select id="question9" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -147,22 +176,12 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
             <h3 class="mgt08">
-                <strong>Question 2</strong>
+                <strong>Question 10</strong>
             </h3>
+            <div id="questionError10"></div>
+           
             <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView" class="question bk" required="required">
-                <option value="" disabled selected>Select An Option</option>
-                <option value="1">(Strongly Agree)</option>
-                <option value="2">(Moderately Agree)</option>
-                <option value="3">(Agree)</option>
-                <option value="4">(Moderately Disagree)</option>
-                <option value="5">(Strongly Disagree)</option>
-            </select>
-            <h3 class="mgt08">
-                <strong>Question 2</strong>
-            </h3>
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="pointOfView" name="pointOfView"  class="question bk" required="required">
+            <select id="question10" name="pointOfView"  class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -171,7 +190,7 @@
                 <option value="5">(Strongly Disagree)</option>
             </select>
         </form>
-        <button id="submit"  type="submit" class="btn btn-primary form-control mgt08" data-toggle="modal" data-target="#myModal">
+        <button id="submit"  type="submit" class="btn btn-primary form-control mgt08" >
             <i class="fa fa-check-circle"></i> Submit
         </button>
         <hr>
@@ -181,8 +200,8 @@
     </div>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="logic.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
   
 </html>

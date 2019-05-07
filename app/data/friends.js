@@ -24,6 +24,6 @@ const friends = [
         photo: "https://images.pexels.com/photos/1138409/pexels-photo-1138409.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
         ansArray: ['1','2','4','3','3','1','2','5','3','4']
     },
-]
+];
 
-module.exports = friends
+module.exports = friends;
