@@ -59,8 +59,8 @@
                 <strong>Question 1</strong>
             </h3>
             <div id="questionError1"></div>            
-            <label for="outdoors"><strong>Your mind is always buzzing with unexplored ideas and plans.</strong></label>
-            <select id="question1" name="outdoors" class="question bk">
+            <label for="question1"><strong>Your mind is always buzzing with unexplored ideas and plans.</strong></label>
+            <select id="question1" name="ideas" class="question bk">
                 <option value=""  disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -73,8 +73,8 @@
                 <strong>Question 2</strong>
             </h3>
             <div id="questionError2"></div>            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="question2" name="pointOfView" class="question bk">
+            <label for="question2"><strong>Generally speaking, you rely more on your experience than your imagination.</strong></label>
+            <select id="question2" name="experience" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -87,8 +87,8 @@
                 <strong>Question 3</strong>
             </h3>
             <div id="questionError3"></div>            
-            <label for="pointOfView"><strong></strong></label>
-            <select id="question3" name="pointOfView" class="question bk">
+            <label for="question3"><strong>You find it easy to stay relaxed and focused even when there is some pressure.</strong></label>
+            <select id="question3" name="pressure" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -101,8 +101,8 @@
                 <strong>Question 4</strong>
             </h3>
             <div id="questionError4"></div>            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="question4" name="pointOfView" class="question bk">
+            <label for="question4"><strong>You rarely do something just out of sheer curiosity.</strong></label>
+            <select id="question4" name="curiosity" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -114,8 +114,8 @@
                 <strong>Question 5</strong>
             </h3>
             <div id="questionError5"></div>            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
-            <select id="question5" name="pointOfView" class="question bk">
+            <label for="question5"><strong>People can rarely upset you.</strong></label>
+            <select id="question5" name="upset" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
                 <option value="2">(Moderately Agree)</option>
@@ -127,7 +127,7 @@
                 <strong>Question 6</strong>
             </h3>
             <div id="questionError6"></div>            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
+            <label for="question6"><strong>It is often difficult for you to relate to other people’s feelings.</strong></label>
             <select id="question6" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
@@ -140,7 +140,7 @@
                 <strong>Question 7</strong>
             </h3>
             <div id="questionError7"></div>            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
+            <label for="question7"><strong>In a discussion, truth should be more important than people’s sensitivities.</strong></label>
             <select id="question7" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
@@ -153,7 +153,7 @@
                 <strong>Question 8</strong>
             </h3>
             <div id="questionError8"></div>            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
+            <label for="question8"><strong>You rarely get carried away by fantasies and ideas.</strong></label>
             <select id="question8" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
@@ -166,7 +166,7 @@
                 <strong>Question 9</strong>
             </h3>
             <div id="questionError9"></div>            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
+            <label for="question9"><strong>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</strong></label>
             <select id="question9" name="pointOfView" class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
@@ -180,7 +180,7 @@
             </h3>
             <div id="questionError10"></div>
            
-            <label for="pointOfView"><strong>You have a hard time seeing things from other people's point of view.</strong></label>
+            <label for="question10"><strong>You feel more energetic after spending time with a group of people.</strong></label>
             <select id="question10" name="pointOfView"  class="question bk">
                 <option value="" disabled selected>Select An Option</option>
                 <option value="1">(Strongly Agree)</option>
@@ -189,10 +189,10 @@
                 <option value="4">(Moderately Disagree)</option>
                 <option value="5">(Strongly Disagree)</option>
             </select>
+            <button id="submit"  type="submit" class="btn btn-primary form-control mgt08" >
+                <i class="fa fa-check-circle"></i> Submit
+            </button>
         </form>
-        <button id="submit"  type="submit" class="btn btn-primary form-control mgt08" >
-            <i class="fa fa-check-circle"></i> Submit
-        </button>
         <hr>
         <a href="/api/friends">API Friends List</a>
         |
